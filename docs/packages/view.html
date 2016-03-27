@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \view
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Service.html">Service</a></li>
+                                                                        <li><a href="../namespaces/googlecharttools.html">googlecharttools</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                    
+        <li>
+        <a href="../packages/view.options.html" title="options">
+            <i class="icon-th"></i> options
+        </a>
+        <ul class="nav nav-list nav-packages">
+                
+    
+        </ul>
+    </li>
+    
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/view.html">view</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="AreaChart" class="element ajax clickable class">
+        <h1>AreaChart<a href="../classes/googlecharttools.view.AreaChart.html">¶</a></h1>
+        <p class="short_description">Creates an area chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The area chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one line/area.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/areachart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.AreaChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="BarChart" class="element ajax clickable class">
+        <h1>BarChart<a href="../classes/googlecharttools.view.BarChart.html">¶</a></h1>
+        <p class="short_description">Creates a bar chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The bar chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one bar.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/barchart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.BarChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="BubbleChart" class="element ajax clickable class">
+        <h1>BubbleChart<a href="../classes/googlecharttools.view.BubbleChart.html">¶</a></h1>
+        <p class="short_description">Creates a bubble chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The bubble chart requires a {@link DataTable} with at least three columns.
+The first column is used for the bubble&#039;s ID, the socond column for its x-value
+and the third for its y-value. Two more optional columns are supported, where
+the first optional column is used to group bubbles or to assigne a color.
+The second optional column is used to set the bubble&#039;s size.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.BubbleChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="CandlestickChart" class="element ajax clickable class">
+        <h1>CandlestickChart<a href="../classes/googlecharttools.view.CandlestickChart.html">¶</a></h1>
+        <p class="short_description">Creates a candlestick chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The candlestick chart requires a {@link DataTable} with at least five columns.
+The first column is used for the x-axis labels and values. The second and fith
+column are used for the minimim and maximum value (vertical lines), respectively.
+The marker&#039;s range is defined by the third and fourth column. The sixth column
+is optional and will be used for the tooltip-text.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/candlestickchart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.CandlestickChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="CartesianChart" class="element ajax clickable class">
+        <h1>CartesianChart<a href="../classes/googlecharttools.view.CartesianChart.html">¶</a></h1>
+        <p class="short_description">A CartesianChart is used as base for all charts that are based on a coordinate system.</p>
+        <div class="details collapse">All charts that extends the CartesianChart do have x- and y-axis, for which
+this class provides the specific options.</div>
+        <a href="../classes/googlecharttools.view.CartesianChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Chart" class="element ajax clickable class">
+        <h1>Chart<a href="../classes/googlecharttools.view.Chart.html">¶</a></h1>
+        <p class="short_description">Abstract base class for all charts supported by the Google Chart Tools.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.Chart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ChartManager" class="element ajax clickable class">
+        <h1>ChartManager<a href="../classes/googlecharttools.view.ChartManager.html">¶</a></h1>
+        <p class="short_description">The ChartManager manages all charts that will be displayed on the page.</p>
+        <div class="details collapse">The ChartManager is responsible for the generation of the correct header-code
+that has to be inserte into the page&#039;s &lt;head&gt; element. The purpose
+of this code is to contact the Google server to fetch all required, external
+JavaScript code used to render the charts. It also contains code, that will
+assign the data and options to the charts and to create the chart themselfs.</div>
+        <a href="../classes/googlecharttools.view.ChartManager.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ColumnChart" class="element ajax clickable class">
+        <h1>ColumnChart<a href="../classes/googlecharttools.view.ColumnChart.html">¶</a></h1>
+        <p class="short_description">Creates a column chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The column chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one column.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/columnchart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.ColumnChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ComboChart" class="element ajax clickable class">
+        <h1>ComboChart<a href="../classes/googlecharttools.view.ComboChart.html">¶</a></h1>
+        <p class="short_description">Creates a combo chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The combo chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for area/bar/line.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/combochart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.ComboChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ContinuousChart" class="element ajax clickable class">
+        <h1>ContinuousChart<a href="../classes/googlecharttools.view.ContinuousChart.html">¶</a></h1>
+        <p class="short_description">A ContinuousChart is used as abstract base class for all charts whose x-axis
+represents continues values.</p>
+        <div class="details collapse">All charts that extends the CartesianChart do have x- and y-axis, for which
+this class provides the specific options.</div>
+        <a href="../classes/googlecharttools.view.ContinuousChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Corechart" class="element ajax clickable class">
+        <h1>Corechart<a href="../classes/googlecharttools.view.Corechart.html">¶</a></h1>
+        <p class="short_description">Abstract base class for all charts located in the &quot;corechart&quot; package.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.Corechart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="DiscreteChart" class="element ajax clickable class">
+        <h1>DiscreteChart<a href="../classes/googlecharttools.view.DiscreteChart.html">¶</a></h1>
+        <p class="short_description">A DiscreteChart is used as abstract base class for all charts whose x-axis
+represents discrete values.</p>
+        <div class="details collapse">All charts that extends the CartesianChart do have x- and y-axis, for which
+this class provides the specific options.</div>
+        <a href="../classes/googlecharttools.view.DiscreteChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Gauge" class="element ajax clickable class">
+        <h1>Gauge<a href="../classes/googlecharttools.view.Gauge.html">¶</a></h1>
+        <p class="short_description">Creates a gauge.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The gauge requires a {@link DataTable} which has two columns.
+The first column is used for the gauge&#039;s label and and the second one for its value.
+Each {@link Row} will be used for one gauge.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.Gauge.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="GeoChart" class="element ajax clickable class">
+        <h1>GeoChart<a href="../classes/googlecharttools.view.GeoChart.html">¶</a></h1>
+        <p class="short_description">Creates a geo chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The geo chart requires a {@link DataTable} which has two or three columns.
+The first column is used to set the region or the marker&#039;s position.
+Ihe second column is optional and can be used to set the
+region&#039;s or marker&#039;s color. In marker mode, the third column can be used to set
+the markers size.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/geochart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.GeoChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="LineChart" class="element ajax clickable class">
+        <h1>LineChart<a href="../classes/googlecharttools.view.LineChart.html">¶</a></h1>
+        <p class="short_description">Creates a line chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The line chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one line.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.LineChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PieChart" class="element ajax clickable class">
+        <h1>PieChart<a href="../classes/googlecharttools.view.PieChart.html">¶</a></h1>
+        <p class="short_description">Creates a pie chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The pie chart requires a {@link DataTable} which has two columns.
+The first column is used for the labels and and the second one for the values.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.PieChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ScatterChart" class="element ajax clickable class">
+        <h1>ScatterChart<a href="../classes/googlecharttools.view.ScatterChart.html">¶</a></h1>
+        <p class="short_description">Creates a scatter chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The scatter chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one data set.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/scatterchart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.ScatterChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="SteppedAreaChart" class="element ajax clickable class">
+        <h1>SteppedAreaChart<a href="../classes/googlecharttools.view.SteppedAreaChart.html">¶</a></h1>
+        <p class="short_description">Creates a stepped area chart.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The stepped area chart requires a {@link DataTable} with at least two columns.
+The first column is used for the x-axis labels and values. Each column that
+follows will be seen as y-values for one line.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/areachart}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.SteppedAreaChart.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Table" class="element ajax clickable class">
+        <h1>Table<a href="../classes/googlecharttools.view.Table.html">¶</a></h1>
+        <p class="short_description">Creates a table.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The {@link DataTable} is directly mapped to the table. The DataTable&#039;s {@link Column}s
+are used for the table&#039;s header.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/table}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.Table.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="TreeMap" class="element ajax clickable class">
+        <h1>TreeMap<a href="../classes/googlecharttools.view.TreeMap.html">¶</a></h1>
+        <p class="short_description">Creates a tree map.</p>
+        <div class="details collapse">&lt;b&gt;Data format:&lt;/b&gt;&lt;br /&gt;
+The tree map requires a {@link DataTable} with at least three columns.
+The first column is used as the nodes ID and name. The second column sets the nodes
+parent ID. The nodes&#039; size is defined through the third column.
+The fourth column is optional and is used to calculate the nodes&#039; color.
+
+See {@link https://google-developers.appspot.com/chart/interactive/docs/gallery/treemap}
+for examples and detailed background information on the required data format.</div>
+        <a href="../classes/googlecharttools.view.TreeMap.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="OptionStorage" class="element ajax clickable class">
+        <h1>OptionStorage<a href="../classes/googlecharttools.view.options.OptionStorage.html">¶</a></h1>
+        <p class="short_description">Abstract base class for all charts and option-sets that store information.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.OptionStorage.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+                
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/view.html">view</a>
+    </li>
+
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/view.options.html">options</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="Animation" class="element ajax clickable class">
+        <h1>Animation<a href="../classes/googlecharttools.view.options.Animation.html">¶</a></h1>
+        <p class="short_description">The Animation class specifies the animation that will be shown when the chart is
+re-drawn.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Animation.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Axis" class="element ajax clickable class">
+        <h1>Axis<a href="../classes/googlecharttools.view.options.Axis.html">¶</a></h1>
+        <p class="short_description">The Axis defines the appearance of the chart&#039;s axis.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Axis.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="BackgroundColor" class="element ajax clickable class">
+        <h1>BackgroundColor<a href="../classes/googlecharttools.view.options.BackgroundColor.html">¶</a></h1>
+        <p class="short_description">The BackgroundColor stores a chart&#039;s background color, border-width and
+border-color</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.BackgroundColor.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Bubble" class="element ajax clickable class">
+        <h1>Bubble<a href="../classes/googlecharttools.view.options.Bubble.html">¶</a></h1>
+        <p class="short_description">The Bubble stores the appearance of a bubble in the bubble chart.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Bubble.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ChartArea" class="element ajax clickable class">
+        <h1>ChartArea<a href="../classes/googlecharttools.view.options.ChartArea.html">¶</a></h1>
+        <p class="short_description">The ChartArea defines the size and position of the displayed chart area.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.ChartArea.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ColorAxis" class="element ajax clickable class">
+        <h1>ColorAxis<a href="../classes/googlecharttools.view.options.ColorAxis.html">¶</a></h1>
+        <p class="short_description">The ColorAxis is used to map the chart&#039;s elements to a color or a gradient.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.ColorAxis.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="CssClassNames" class="element ajax clickable class">
+        <h1>CssClassNames<a href="../classes/googlecharttools.view.options.CssClassNames.html">¶</a></h1>
+        <p class="short_description">The CssClassNames sets the CSS-class name through which the style of a {@link Table}
+can be customized.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.CssClassNames.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Gridlines" class="element ajax clickable class">
+        <h1>Gridlines<a href="../classes/googlecharttools.view.options.Gridlines.html">¶</a></h1>
+        <p class="short_description">The Gridlines sets the gridlines used in the chart area.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Gridlines.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="HAxis" class="element ajax clickable class">
+        <h1>HAxis<a href="../classes/googlecharttools.view.options.HAxis.html">¶</a></h1>
+        <p class="short_description">The HAxis defines the appearance of the chart&#039;s horizontal axis.</p>
+        <div class="details collapse">The options set in this option-set are only valid in discrete charts.</div>
+        <a href="../classes/googlecharttools.view.options.HAxis.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Legend" class="element ajax clickable class">
+        <h1>Legend<a href="../classes/googlecharttools.view.options.Legend.html">¶</a></h1>
+        <p class="short_description">The Legend defines the text style and position of the chart&#039;s legend.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Legend.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="MagnifyingGlass" class="element ajax clickable class">
+        <h1>MagnifyingGlass<a href="../classes/googlecharttools.view.options.MagnifyingGlass.html">¶</a></h1>
+        <p class="short_description">The MagnifyingGlass defines the magnifying glass&#039; behaviour.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.MagnifyingGlass.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Series" class="element ajax clickable class">
+        <h1>Series<a href="../classes/googlecharttools.view.options.Series.html">¶</a></h1>
+        <p class="short_description">The Series defines the format of one series in the chart.</p>
+        <div class="details collapse">&lt;b&gt;Note:&lt;/b&gt; Not all options that can be set through this class are supported
+by all charts. Please visit the Google Chart Tools documentation for detailed
+information.</div>
+        <a href="../classes/googlecharttools.view.options.Series.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="SizeAxis" class="element ajax clickable class">
+        <h1>SizeAxis<a href="../classes/googlecharttools.view.options.SizeAxis.html">¶</a></h1>
+        <p class="short_description">The SizeAxis is used to map the chart&#039;s elements according to their size to the size axis.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.SizeAxis.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Slice" class="element ajax clickable class">
+        <h1>Slice<a href="../classes/googlecharttools.view.options.Slice.html">¶</a></h1>
+        <p class="short_description">The Slice defines the color and text style of a single slice in a {@link PieChart}.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Slice.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="TextStyle" class="element ajax clickable class">
+        <h1>TextStyle<a href="../classes/googlecharttools.view.options.TextStyle.html">¶</a></h1>
+        <p class="short_description">The TextStyle defines the color, size and font name of a text element.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.TextStyle.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="Tooltip" class="element ajax clickable class">
+        <h1>Tooltip<a href="../classes/googlecharttools.view.options.Tooltip.html">¶</a></h1>
+        <p class="short_description">The Tooltip defines what will be visbile when the cursor is over an element of the chart.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.Tooltip.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="ViewWindow" class="element ajax clickable class">
+        <h1>ViewWindow<a href="../classes/googlecharttools.view.options.ViewWindow.html">¶</a></h1>
+        <p class="short_description">The ViewWindow defines the visible area of the chart.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/googlecharttools.view.options.ViewWindow.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 27 Mar 2016 09:54:25 -0700.<br/>
+    </footer>
+    </body>
+</html>

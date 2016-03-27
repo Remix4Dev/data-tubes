@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \googlecharttools\view\BubbleChart
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Service.html">Service</a></li>
+                                                                        <li><a href="../namespaces/googlecharttools.html">googlecharttools</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_setBubble" title="setBubble :: Sets the bubbles&#039; appearance.">
+            <span class="description">Sets the bubbles&#039; appearance.</span><pre>setBubble</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setColorAxis" title="setColorAxis :: Sets the mapping between bubbles and their color specified in the color column.">
+            <span class="description">Sets the mapping between bubbles and their color specified in the color column.</span><pre>setColorAxis</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSizeAxis" title="setSizeAxis :: Sets the mapping between bubbles and their size specified in the size column.">
+            <span class="description">Sets the mapping between bubbles and their size specified in the size column.</span><pre>setSizeAxis</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSortBubblesBySize" title="setSortBubblesBySize :: Sets if the bubble should be sorted by size or by the value set in the
+{@link DataTable}.">
+            <span class="description">Sets if the bubble should be sorted by size or by the value set in the
+{@link DataTable}.</span><pre>setSortBubblesBySize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setAnimation" title="setAnimation :: Sets the animation that will be used when the data is drawn or redrawn.">
+            <span class="description">Sets the animation that will be used when the data is drawn or redrawn.</span><pre>setAnimation</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setAxisTitlesPosition" title="setAxisTitlesPosition :: Sets the position where the axis title will be displayed.">
+            <span class="description">Sets the position where the axis title will be displayed.</span><pre>setAxisTitlesPosition</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setEnableInteractivity" title="setEnableInteractivity :: Sets if the chart will react on user actions and throws events.">
+            <span class="description">Sets if the chart will react on user actions and throws events.</span><pre>setEnableInteractivity</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setHAxis" title="setHAxis :: Sets the appearance of the horizontal axis.">
+            <span class="description">Sets the appearance of the horizontal axis.</span><pre>setHAxis</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setSeries" title="setSeries :: Sets the format of the chart&#039;s series.">
+            <span class="description">Sets the format of the chart&#039;s series.</span><pre>setSeries</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setTheme" title="setTheme :: Sets the chart&#039;s theme.">
+            <span class="description">Sets the chart&#039;s theme.</span><pre>setTheme</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setTitlePosition" title="setTitlePosition :: Sets the axis tile&#039;s position.">
+            <span class="description">Sets the axis tile&#039;s position.</span><pre>setTitlePosition</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setVAxis" title="setVAxis :: Sets the appearance of the vertical axis.">
+            <span class="description">Sets the appearance of the vertical axis.</span><pre>setVAxis</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getPackage" title="getPackage :: ">
+            <span class="description"></span><pre>getPackage</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setBackgroundColor" title="setBackgroundColor :: Sets the chart&#039;s background color and border.">
+            <span class="description">Sets the chart&#039;s background color and border.</span><pre>setBackgroundColor</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setChartArea" title="setChartArea :: Sets the chart&#039;s position and size relative to it&#039;s border.">
+            <span class="description">Sets the chart&#039;s position and size relative to it&#039;s border.</span><pre>setChartArea</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setColors" title="setColors :: Sets the chart element&#039;s color.">
+            <span class="description">Sets the chart element&#039;s color.</span><pre>setColors</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setFontSize" title="setFontSize :: Sets the font size.">
+            <span class="description">Sets the font size.</span><pre>setFontSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setFontName" title="setFontName :: Sets the font name.">
+            <span class="description">Sets the font name.</span><pre>setFontName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setLegend" title="setLegend :: Sets the legends position and text style.">
+            <span class="description">Sets the legends position and text style.</span><pre>setLegend</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setReverseCategories" title="setReverseCategories :: Sets the direction, in which the data will be read.">
+            <span class="description">Sets the direction, in which the data will be read.</span><pre>setReverseCategories</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setTitle" title="setTitle :: Sets the chart&#039;s title.">
+            <span class="description">Sets the chart&#039;s title.</span><pre>setTitle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setTitleTextStyle" title="setTitleTextStyle :: Sets the chart title&#039;s text style.">
+            <span class="description">Sets the chart title&#039;s text style.</span><pre>setTitleTextStyle</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setTooltip" title="setTooltip :: Sets the behaviour and style of the chart&#039;s tooltip.">
+            <span class="description">Sets the behaviour and style of the chart&#039;s tooltip.</span><pre>setTooltip</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method___construct" title="__construct :: Creates a new chart.">
+            <span class="description">Creates a new chart.</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getId" title="getId :: Gets the chart&#039;s ID.">
+            <span class="description">Gets the chart&#039;s ID.</span><pre>getId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setData" title="setData :: Sets the chart&#039;s data.">
+            <span class="description">Sets the chart&#039;s data.</span><pre>setData</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setWidth" title="setWidth :: Sets the chart&#039;s width used when the chart is displayed.">
+            <span class="description">Sets the chart&#039;s width used when the chart is displayed.</span><pre>setWidth</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setHeight" title="setHeight :: Sets the chart&#039;s height used when the chart is displayed.">
+            <span class="description">Sets the chart&#039;s height used when the chart is displayed.</span><pre>setHeight</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addJavaScriptCode" title="addJavaScriptCode :: Adds additional code to the generated JavaScript code.">
+            <span class="description">Adds additional code to the generated JavaScript code.</span><pre>addJavaScriptCode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addPrepareJavaScriptCode" title="addPrepareJavaScriptCode :: Adds additional code to the generated JavaScript prepare-function.">
+            <span class="description">Adds additional code to the generated JavaScript prepare-function.</span><pre>addPrepareJavaScriptCode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getJavaScriptCode" title="getJavaScriptCode :: Generates the JavaCode that will be used inside the script-element.">
+            <span class="description">Generates the JavaCode that will be used inside the script-element.</span><pre>getJavaScriptCode</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getHtmlContainer" title="getHtmlContainer :: Gets the HTML &lt;div&gt; container in which the chart will be displayed.">
+            <span class="description">Gets the HTML &lt;div&gt; container in which the chart will be displayed.</span><pre>getHtmlContainer</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getOption" title="getOption :: Gets an option&#039;s value">
+            <span class="description">Gets an option&#039;s value</span><pre>getOption</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOption" title="setOption :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOption</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionBoolean" title="setOptionBoolean :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionBoolean</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionNumeric" title="setOptionNumeric :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionNumeric</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionArray" title="setOptionArray :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionArray</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                            <a href="#method_encodeOptions" title="encodeOptions :: Encodes the set options into a JSON-object">
+                                <span class="description">Encodes the set options into a JSON-object</span><pre>encodeOptions</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
+                            <a href="#method_encodeArrayToJson" title="encodeArrayToJson :: Encodes an array into a JSON-object or array.">
+                                <span class="description">Encodes an array into a JSON-object or array.</span><pre>encodeArrayToJson</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_AXIS_TITLE_IN" title="AXIS_TITLE_IN :: The axis title will be drawn inside the chart area.">
+                        <span class="description">The axis title will be drawn inside the chart area.</span><pre>AXIS_TITLE_IN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_AXIS_TITLE_OUT" title="AXIS_TITLE_OUT :: The axis title will be drawn outsite the chart area.">
+                        <span class="description">The axis title will be drawn outsite the chart area.</span><pre>AXIS_TITLE_OUT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_AXIS_TITLE_NONE" title="AXIS_TITLE_NONE :: The axis title won&#039;t be displayed.">
+                        <span class="description">The axis title won&#039;t be displayed.</span><pre>AXIS_TITLE_NONE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_THEME_MAXIMIZED" title="THEME_MAXIMIZED :: The chart&#039;s area is maximizes and all labels inside the chart and the legend
+is drawn.">
+                        <span class="description">The chart&#039;s area is maximizes and all labels inside the chart and the legend
+is drawn.</span><pre>THEME_MAXIMIZED</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TITLE_IN" title="TITLE_IN :: The title is drawn inside the chart&#039;s area.">
+                        <span class="description">The title is drawn inside the chart&#039;s area.</span><pre>TITLE_IN</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TITLE_NONE" title="TITLE_NONE :: The title is not drawn.">
+                        <span class="description">The title is not drawn.</span><pre>TITLE_NONE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TITLE_OUT" title="TITLE_OUT :: The title is drawn outside the chart&#039;s area.">
+                        <span class="description">The title is drawn outside the chart&#039;s area.</span><pre>TITLE_OUT</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>BubbleChart</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/googlecharttools.view.CartesianChart.html">\googlecharttools\view\CartesianChart</a>
+                                                        </small>
+                <p class="short_description">Creates a bubble chart.</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p><b>Data format:</b><br />
+The bubble chart requires a {@link DataTable} with at least three columns.
+The first column is used for the bubble's ID, the socond column for its x-value
+and the third for its y-value. Two more optional columns are supported, where
+the first optional column is used to group bubbles or to assigne a color.
+The second optional column is used to set the bubble's size.</p>
+<p>See {@link <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart">https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart</a>}
+for examples and detailed background information on the required data format.</p>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>view</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                                                                    </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_setBubble"></a>
+                        <div class="element clickable method public  method_setBubble" data-toggle="collapse" data-target=".method_setBubble .collapse">
+                            <h2>Sets the bubbles&#039; appearance.</h2>
+                            <pre>setBubble(\googlecharttools\view\options\Bubble $bubble) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$bubble</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Bubble.html">\googlecharttools\view\options\Bubble</a></code><p><p>The appearance of the chart's bubbles. If set to null, the</p>
+<pre><code>         default appearance will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setColorAxis"></a>
+                        <div class="element clickable method public  method_setColorAxis" data-toggle="collapse" data-target=".method_setColorAxis .collapse">
+                            <h2>Sets the mapping between bubbles and their color specified in the color column.</h2>
+                            <pre>setColorAxis(\googlecharttools\view\options\ColorAxis $axis) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$axis</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.ColorAxis.html">\googlecharttools\view\options\ColorAxis</a></code><p><p>The color mapping. If set to null, no color axis will be displayed.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSizeAxis"></a>
+                        <div class="element clickable method public  method_setSizeAxis" data-toggle="collapse" data-target=".method_setSizeAxis .collapse">
+                            <h2>Sets the mapping between bubbles and their size specified in the size column.</h2>
+                            <pre>setSizeAxis(\googlecharttools\view\options\SizeAxis $axis) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$axis</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.SizeAxis.html">\googlecharttools\view\options\SizeAxis</a></code><p><p>The size mapping. If set to null, the size will be calculatted</p>
+<pre><code>         automatically.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSortBubblesBySize"></a>
+                        <div class="element clickable method public  method_setSortBubblesBySize" data-toggle="collapse" data-target=".method_setSortBubblesBySize .collapse">
+                            <h2>Sets if the bubble should be sorted by size or by the value set in the
+{@link DataTable}.</h2>
+                            <pre>setSortBubblesBySize(boolean $sort) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$sort</h4>
+                                                <code>boolean</code><p><p>If set to true, the bubbles or sorted by their size.</p>
+<pre><code>         If set to false or null, they are sorted by their value.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAnimation"></a>
+                        <div class="element clickable method public  method_setAnimation inherited" data-toggle="collapse" data-target=".method_setAnimation .collapse">
+                            <h2>Sets the animation that will be used when the data is drawn or redrawn.</h2>
+                            <pre>setAnimation(\googlecharttools\view\options\Animation $animation) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$animation</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Animation.html">\googlecharttools\view\options\Animation</a></code><p><p>The animation. If set to null, no animation will be used.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAxisTitlesPosition"></a>
+                        <div class="element clickable method public  method_setAxisTitlesPosition inherited" data-toggle="collapse" data-target=".method_setAxisTitlesPosition .collapse">
+                            <h2>Sets the position where the axis title will be displayed.</h2>
+                            <pre>setAxisTitlesPosition(string $position) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given position is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$position</h4>
+                                                <code>string</code><p><p>The title's position. Must be one of the <i>AXIS<em>TITLE</em>...</i></p>
+<pre><code>         constants or null. If set to null, the title will be
+         drawn outsite the chart area.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setEnableInteractivity"></a>
+                        <div class="element clickable method public  method_setEnableInteractivity inherited" data-toggle="collapse" data-target=".method_setEnableInteractivity .collapse">
+                            <h2>Sets if the chart will react on user actions and throws events.</h2>
+                            <pre>setEnableInteractivity(boolean $interactivity) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$interactivity</h4>
+                                                <code>boolean</code><p><p>If set to true or null, the chart will react on user actions and</p>
+<pre><code>         throw events.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHAxis"></a>
+                        <div class="element clickable method public  method_setHAxis inherited" data-toggle="collapse" data-target=".method_setHAxis .collapse">
+                            <h2>Sets the appearance of the horizontal axis.</h2>
+                            <pre>setHAxis(\googlecharttools\view\options\Axis $axis) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$axis</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Axis.html">\googlecharttools\view\options\Axis</a></code><p><p>The axis definition. If set to null, the default appearance</p>
+<pre><code>         will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSeries"></a>
+                        <div class="element clickable method public  method_setSeries inherited" data-toggle="collapse" data-target=".method_setSeries .collapse">
+                            <h2>Sets the format of the chart&#039;s series.</h2>
+                            <pre>setSeries(\googlecharttools\view\Series[] $series) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$series</h4>
+                                                <code>\googlecharttools\view\Series[]</code><p><p>An array where each element defines a single series.</p>
+<pre><code>         Either the array's entries are added in the same order
+         as the chart's lines (the {@link Row}) or the corresponding
+         line is set as the array's key (a numeric string).</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTheme"></a>
+                        <div class="element clickable method public  method_setTheme inherited" data-toggle="collapse" data-target=".method_setTheme .collapse">
+                            <h2>Sets the chart&#039;s theme.</h2>
+                            <pre>setTheme(string $theme) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>A theme is a set of predefined options.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given theme is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$theme</h4>
+                                                <code>string</code><p><p>The theme. Must be on of the <i>THEME_...</i> constants or null.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTitlePosition"></a>
+                        <div class="element clickable method public  method_setTitlePosition inherited" data-toggle="collapse" data-target=".method_setTitlePosition .collapse">
+                            <h2>Sets the axis tile&#039;s position.</h2>
+                            <pre>setTitlePosition(string $position) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given position is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$position</h4>
+                                                <code>string</code><p><p>The title's position. Must be one of the <i>AXIS<em>TITLE</em>...</i></p>
+<pre><code>         constants or null.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setVAxis"></a>
+                        <div class="element clickable method public  method_setVAxis inherited" data-toggle="collapse" data-target=".method_setVAxis .collapse">
+                            <h2>Sets the appearance of the vertical axis.</h2>
+                            <pre>setVAxis(\googlecharttools\view\options\Axis $axis) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$axis</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Axis.html">\googlecharttools\view\options\Axis</a></code><p><p>The axis definition. If set to null, the default appearance</p>
+<pre><code>         will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getPackage"></a>
+                        <div class="element clickable method public  method_getPackage inherited" data-toggle="collapse" data-target=".method_getPackage .collapse">
+                            <h2>getPackage</h2>
+                            <pre>getPackage() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setBackgroundColor"></a>
+                        <div class="element clickable method public  method_setBackgroundColor inherited" data-toggle="collapse" data-target=".method_setBackgroundColor .collapse">
+                            <h2>Sets the chart&#039;s background color and border.</h2>
+                            <pre>setBackgroundColor(\googlecharttools\view\options\BackgroundColor $background) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$background</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.BackgroundColor.html">\googlecharttools\view\options\BackgroundColor</a></code><p><p>Background color and border. If set to null, the default</p>
+<pre><code>         background color and border will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setChartArea"></a>
+                        <div class="element clickable method public  method_setChartArea inherited" data-toggle="collapse" data-target=".method_setChartArea .collapse">
+                            <h2>Sets the chart&#039;s position and size relative to it&#039;s border.</h2>
+                            <pre>setChartArea(\googlecharttools\view\options\ChartArea $area) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$area</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.ChartArea.html">\googlecharttools\view\options\ChartArea</a></code><p><p>Position and size. If set to null, the default</p>
+<pre><code>         position and size will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setColors"></a>
+                        <div class="element clickable method public  method_setColors inherited" data-toggle="collapse" data-target=".method_setColors .collapse">
+                            <h2>Sets the chart element&#039;s color.</h2>
+                            <pre>setColors(string[] $colors) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>These colors will be assigned to the chart's elements.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$colors</h4>
+                                                <code>string[]</code><p><p>An array where each value represents a color for a</p>
+<pre><code>         specific element of the chart. Any valid HTML/CSS color
+         definition can be used (e. g. "white", #FFF, #123456).
+         If set to null, the default colors will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setFontSize"></a>
+                        <div class="element clickable method public  method_setFontSize inherited" data-toggle="collapse" data-target=".method_setFontSize .collapse">
+                            <h2>Sets the font size.</h2>
+                            <pre>setFontSize(int $size) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This font size will be used for all text-elements in the chart, as long
+as no other size has been set for the sub text-element.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$size</h4>
+                                                <code>int</code><p><p>Font size in pixels. If set to null, the default size will be used.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setFontName"></a>
+                        <div class="element clickable method public  method_setFontName inherited" data-toggle="collapse" data-target=".method_setFontName .collapse">
+                            <h2>Sets the font name.</h2>
+                            <pre>setFontName(string $name) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This font will be used as for all text-elements in the chart, as long
+as no other font name has been set for the sub text-element.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>Font name. If set to null, the default font will be used.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setLegend"></a>
+                        <div class="element clickable method public  method_setLegend inherited" data-toggle="collapse" data-target=".method_setLegend .collapse">
+                            <h2>Sets the legends position and text style.</h2>
+                            <pre>setLegend(\googlecharttools\view\options\Legend $legend) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$legend</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Legend.html">\googlecharttools\view\options\Legend</a></code><p><p>Position and text style. If set to null, the default position</p>
+<pre><code>         and text style will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setReverseCategories"></a>
+                        <div class="element clickable method public  method_setReverseCategories inherited" data-toggle="collapse" data-target=".method_setReverseCategories .collapse">
+                            <h2>Sets the direction, in which the data will be read.</h2>
+                            <pre>setReverseCategories(boolean $reverse) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reverse</h4>
+                                                <code>boolean</code><p><p>If set to true, the data will be read in reverse.</p>
+<pre><code>         If set to false or null, it will be read in the order it's
+         added to the {@link DataTable}.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTitle"></a>
+                        <div class="element clickable method public  method_setTitle inherited" data-toggle="collapse" data-target=".method_setTitle .collapse">
+                            <h2>Sets the chart&#039;s title.</h2>
+                            <pre>setTitle(string $title) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The title will be displayed above the graph.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$title</h4>
+                                                <code>string</code><p><p>The chart's title. If set to null, no title will</p>
+<pre><code>         be displayed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTitleTextStyle"></a>
+                        <div class="element clickable method public  method_setTitleTextStyle inherited" data-toggle="collapse" data-target=".method_setTitleTextStyle .collapse">
+                            <h2>Sets the chart title&#039;s text style.</h2>
+                            <pre>setTitleTextStyle(\googlecharttools\view\options\TextStyle $textStyle) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$textStyle</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.TextStyle.html">\googlecharttools\view\options\TextStyle</a></code><p><p>The text style. If set to null, the default text style will</p>
+<pre><code>         be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTooltip"></a>
+                        <div class="element clickable method public  method_setTooltip inherited" data-toggle="collapse" data-target=".method_setTooltip .collapse">
+                            <h2>Sets the behaviour and style of the chart&#039;s tooltip.</h2>
+                            <pre>setTooltip(\googlecharttools\view\options\Tooltip $tooltip) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$tooltip</h4>
+                                                <code><a href="../classes/googlecharttools.view.options.Tooltip.html">\googlecharttools\view\options\Tooltip</a></code><p><p>The tooltip behaviour and style. If set to null, the default</p>
+<pre><code>         behaviour and style will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Creates a new chart.</h2>
+                            <pre>__construct(string $id, \googlecharttools\model\DataTable $data = null, int $width = 700, int $height = 300) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$id</h4>
+                                                <code>string</code><p><p>The chart's ID. As this will be used as part of the chart reference</p>
+<pre><code>         names in the generated JavaScript code, the IDs have to be unique.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code><a href="../classes/googlecharttools.model.DataTable.html">\googlecharttools\model\DataTable</a></code><p><p>The data that will be visualized through this chart.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$width</h4>
+                                                <code>int</code><p><p>The chart's widht (in pixels).</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$height</h4>
+                                                <code>int</code><p><p>The chart's height (in pixels).</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getId"></a>
+                        <div class="element clickable method public  method_getId inherited" data-toggle="collapse" data-target=".method_getId .collapse">
+                            <h2>Gets the chart&#039;s ID.</h2>
+                            <pre>getId() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The chart's ID.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setData"></a>
+                        <div class="element clickable method public  method_setData inherited" data-toggle="collapse" data-target=".method_setData .collapse">
+                            <h2>Sets the chart&#039;s data.</h2>
+                            <pre>setData(\googlecharttools\model\DataTable $data) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The data will be used by the API to draw the chart.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code><a href="../classes/googlecharttools.model.DataTable.html">\googlecharttools\model\DataTable</a></code><p><p>Data used for this chart.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setWidth"></a>
+                        <div class="element clickable method public  method_setWidth inherited" data-toggle="collapse" data-target=".method_setWidth .collapse">
+                            <h2>Sets the chart&#039;s width used when the chart is displayed.</h2>
+                            <pre>setWidth(int $width) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$width</h4>
+                                                <code>int</code><p><p>Positive humber that represents the chart's width in pixels.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHeight"></a>
+                        <div class="element clickable method public  method_setHeight inherited" data-toggle="collapse" data-target=".method_setHeight .collapse">
+                            <h2>Sets the chart&#039;s height used when the chart is displayed.</h2>
+                            <pre>setHeight(int $height) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$height</h4>
+                                                <code>int</code><p><p>Positive humber that represents the chart's height in pixels.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addJavaScriptCode"></a>
+                        <div class="element clickable method public  method_addJavaScriptCode inherited" data-toggle="collapse" data-target=".method_addJavaScriptCode .collapse">
+                            <h2>Adds additional code to the generated JavaScript code.</h2>
+                            <pre>addJavaScriptCode(string $code) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The code will be added outside the prepare-function.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$code</h4>
+                                                <code>string</code><p><p>Additonal JavaScript code.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addPrepareJavaScriptCode"></a>
+                        <div class="element clickable method public  method_addPrepareJavaScriptCode inherited" data-toggle="collapse" data-target=".method_addPrepareJavaScriptCode .collapse">
+                            <h2>Adds additional code to the generated JavaScript prepare-function.</h2>
+                            <pre>addPrepareJavaScriptCode(string $code) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The code will be added at the end of the function.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$code</h4>
+                                                <code>string</code><p><p>Additonal JavaScript code.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getJavaScriptCode"></a>
+                        <div class="element clickable method public  method_getJavaScriptCode inherited" data-toggle="collapse" data-target=".method_getJavaScriptCode .collapse">
+                            <h2>Generates the JavaCode that will be used inside the script-element.</h2>
+                            <pre>getJavaScriptCode() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The script-element is typically located inside the <head> HTML element.
+The generated JavaScript code contains a prepare method that will set the
+chart's data, options and chart itself. There is typically no need to call
+this method manually. Instead, this method is called for every chart that
+has been added to the {@link ChartManager} when
+{@link ChartManager::getJavaScriptCode()} is called.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the JavaScript code coudn't be generated, because</p>
+<pre><code>         no data ({@link setData()}) has been assigned to the chart.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The generated JavaScript code.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getHtmlContainer"></a>
+                        <div class="element clickable method public  method_getHtmlContainer inherited" data-toggle="collapse" data-target=".method_getHtmlContainer .collapse">
+                            <h2>Gets the HTML &lt;div&gt; container in which the chart will be displayed.</h2>
+                            <pre>getHtmlContainer() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The HTML container.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getOption"></a>
+                        <div class="element clickable method public  method_getOption inherited" data-toggle="collapse" data-target=".method_getOption .collapse">
+                            <h2>Gets an option&#039;s value</h2>
+                            <pre>getOption(string $name) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The name of the option to get the value for.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>The option's value. Is null, if option is not set.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOption"></a>
+                        <div class="element clickable method public  method_setOption inherited" data-toggle="collapse" data-target=".method_setOption .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOption(string $name, string $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This allows to set additional options that are currently not supported by the set-methods.
+However, you should always use on of the other set-methods if possible.</p>
+<p>Through this method, additional option-code can be added to the generated
+JavaScript-code. This is usefull, when options should be set that are
+currently not directly supported by this API (through set...() methods).</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionBoolean"></a>
+                        <div class="element clickable method public  method_setOptionBoolean inherited" data-toggle="collapse" data-target=".method_setOptionBoolean .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionBoolean(string $name, boolean $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only boolean values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>boolean</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionNumeric"></a>
+                        <div class="element clickable method public  method_setOptionNumeric inherited" data-toggle="collapse" data-target=".method_setOptionNumeric .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionNumeric(string $name, \googlecharttools\view\options\number $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only numeric values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>\googlecharttools\view\options\number</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionArray"></a>
+                        <div class="element clickable method public  method_setOptionArray inherited" data-toggle="collapse" data-target=".method_setOptionArray .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionArray(string $name, string[] $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only array values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string[]</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encodeOptions"></a>
+                        <div class="element clickable method protected  method_encodeOptions inherited" data-toggle="collapse" data-target=".method_encodeOptions .collapse">
+                            <h2>Encodes the set options into a JSON-object</h2>
+                            <pre>encodeOptions() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>Encoded options.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encodeArrayToJson"></a>
+                        <div class="element clickable method private  method_encodeArrayToJson inherited" data-toggle="collapse" data-target=".method_encodeArrayToJson .collapse">
+                            <h2>Encodes an array into a JSON-object or array.</h2>
+                            <pre>encodeArrayToJson(mixed[] $array, boolean $asObject = true) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$array</h4>
+                                                <code>mixed[]</code><p><p>The array, the data is stored in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$asObject</h4>
+                                                <code>boolean</code><p><p>If set to true, the data will be encoded as an JSON-object.</p>
+<pre><code>         Otherwise its encoded as a JSON-array.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The encoded data.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_AXIS_TITLE_IN"> </a>
+                            <div class="element clickable constant  constant_AXIS_TITLE_IN inherited" data-toggle="collapse" data-target=".constant_AXIS_TITLE_IN .collapse">
+                                <h2>The axis title will be drawn inside the chart area.</h2>
+                                <pre>AXIS_TITLE_IN</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_AXIS_TITLE_OUT"> </a>
+                            <div class="element clickable constant  constant_AXIS_TITLE_OUT inherited" data-toggle="collapse" data-target=".constant_AXIS_TITLE_OUT .collapse">
+                                <h2>The axis title will be drawn outsite the chart area.</h2>
+                                <pre>AXIS_TITLE_OUT</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_AXIS_TITLE_NONE"> </a>
+                            <div class="element clickable constant  constant_AXIS_TITLE_NONE inherited" data-toggle="collapse" data-target=".constant_AXIS_TITLE_NONE .collapse">
+                                <h2>The axis title won&#039;t be displayed.</h2>
+                                <pre>AXIS_TITLE_NONE</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_THEME_MAXIMIZED"> </a>
+                            <div class="element clickable constant  constant_THEME_MAXIMIZED inherited" data-toggle="collapse" data-target=".constant_THEME_MAXIMIZED .collapse">
+                                <h2>The chart&#039;s area is maximizes and all labels inside the chart and the legend
+is drawn.</h2>
+                                <pre>THEME_MAXIMIZED</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TITLE_IN"> </a>
+                            <div class="element clickable constant  constant_TITLE_IN inherited" data-toggle="collapse" data-target=".constant_TITLE_IN .collapse">
+                                <h2>The title is drawn inside the chart&#039;s area.</h2>
+                                <pre>TITLE_IN</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TITLE_NONE"> </a>
+                            <div class="element clickable constant  constant_TITLE_NONE inherited" data-toggle="collapse" data-target=".constant_TITLE_NONE .collapse">
+                                <h2>The title is not drawn.</h2>
+                                <pre>TITLE_NONE</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TITLE_OUT"> </a>
+                            <div class="element clickable constant  constant_TITLE_OUT inherited" data-toggle="collapse" data-target=".constant_TITLE_OUT .collapse">
+                                <h2>The title is drawn outside the chart&#039;s area.</h2>
+                                <pre>TITLE_OUT</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_id"> </a>
+                            <div class="element clickable property  private property_id inherited" data-toggle="collapse" data-target=".property_id .collapse">
+                                <h2>id</h2>
+                                <pre>id : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_data"> </a>
+                            <div class="element clickable property  private property_data inherited" data-toggle="collapse" data-target=".property_data .collapse">
+                                <h2>data</h2>
+                                <pre>data : \googlecharttools\model\DataTable</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/googlecharttools.model.DataTable.html">\googlecharttools\model\DataTable</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_additionalCode"> </a>
+                            <div class="element clickable property  private property_additionalCode inherited" data-toggle="collapse" data-target=".property_additionalCode .collapse">
+                                <h2>additionalCode</h2>
+                                <pre>additionalCode : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_additionalPrepareCode"> </a>
+                            <div class="element clickable property  private property_additionalPrepareCode inherited" data-toggle="collapse" data-target=".property_additionalPrepareCode .collapse">
+                                <h2>additionalPrepareCode</h2>
+                                <pre>additionalPrepareCode : string</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_options"> </a>
+                            <div class="element clickable property  private property_options inherited" data-toggle="collapse" data-target=".property_options .collapse">
+                                <h2>options</h2>
+                                <pre>options : mixed[]</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>mixed[]</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\googlecharttools\view\BubbleChart"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/googlecharttools.view.html">view</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/googlecharttools.view.BubbleChart.html">BubbleChart</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 27 Mar 2016 09:54:26 -0700.<br/>
+    </footer>
+    </body>
+</html>

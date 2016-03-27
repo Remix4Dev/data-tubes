@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \googlecharttools\view\options\Series
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Service.html">Service</a></li>
+                                                                        <li><a href="../namespaces/googlecharttools.html">googlecharttools</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Creates a new Series option-set.">
+            <span class="description">Creates a new Series option-set.</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setType" title="setType :: Sets the series&#039; type.">
+            <span class="description">Sets the series&#039; type.</span><pre>setType</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setColor" title="setColor :: Sets the series color.">
+            <span class="description">Sets the series color.</span><pre>setColor</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setTargetAxisIndex" title="setTargetAxisIndex :: Sets the axis to which the series will be assigned.">
+            <span class="description">Sets the axis to which the series will be assigned.</span><pre>setTargetAxisIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setLineWidth" title="setLineWidth :: Sets the individual data line&#039;s width.">
+            <span class="description">Sets the individual data line&#039;s width.</span><pre>setLineWidth</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setPointSize" title="setPointSize :: Sets the individual data point size.">
+            <span class="description">Sets the individual data point size.</span><pre>setPointSize</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setAreaOpacity" title="setAreaOpacity :: Sets the individual colored area&#039;s opacity.">
+            <span class="description">Sets the individual colored area&#039;s opacity.</span><pre>setAreaOpacity</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setCurveType" title="setCurveType :: Sets the series&#039; curve type.">
+            <span class="description">Sets the series&#039; curve type.</span><pre>setCurveType</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setVisibleInLegend" title="setVisibleInLegend :: Sets if the series will be visible in the legend.">
+            <span class="description">Sets if the series will be visible in the legend.</span><pre>setVisibleInLegend</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getOption" title="getOption :: Gets an option&#039;s value">
+            <span class="description">Gets an option&#039;s value</span><pre>getOption</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOption" title="setOption :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOption</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionBoolean" title="setOptionBoolean :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionBoolean</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionNumeric" title="setOptionNumeric :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionNumeric</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setOptionArray" title="setOptionArray :: Sets an option to a given value.">
+            <span class="description">Sets an option to a given value.</span><pre>setOptionArray</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_encodeOptions" title="encodeOptions :: Encodes the set options into a JSON-object">
+                                <span class="description">Encodes the set options into a JSON-object</span><pre>encodeOptions</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                            <a href="#method_encodeArrayToJson" title="encodeArrayToJson :: Encodes an array into a JSON-object or array.">
+                                <span class="description">Encodes an array into a JSON-object or array.</span><pre>encodeArrayToJson</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                                <li class="constant ">
+                    <a href="#constant_TYPE_AREA" title="TYPE_AREA :: ">
+                        <span class="description"></span><pre>TYPE_AREA</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TYPE_BARS" title="TYPE_BARS :: ">
+                        <span class="description"></span><pre>TYPE_BARS</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_TYPE_LINE" title="TYPE_LINE :: ">
+                        <span class="description"></span><pre>TYPE_LINE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CURVE_NONE" title="CURVE_NONE :: ">
+                        <span class="description"></span><pre>CURVE_NONE</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_CURVE_FUNCTION" title="CURVE_FUNCTION :: ">
+                        <span class="description"></span><pre>CURVE_FUNCTION</pre>
+                    </a>
+                </li>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Series</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/googlecharttools.view.options.OptionStorage.html">\googlecharttools\view\options\OptionStorage</a>
+                                                        </small>
+                <p class="short_description">The Series defines the format of one series in the chart.</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p><b>Note:</b> Not all options that can be set through this class are supported
+by all charts. Please visit the Google Chart Tools documentation for detailed
+information.</p>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>view</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        subpackage
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>options</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Creates a new Series option-set.</h2>
+                            <pre>__construct(string $type = null, string $color = null, int $targetAxisIndex = null, int $pointSize = null, int $lineWidth = null, float $areaOpacity = null, mixed $curveType = null, boolean $visibleInLegend = null) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given type or curve type is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>The series' marker type. Must be on of the <i>TYPE_...</i></p>
+<pre><code>         constants or null.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$color</h4>
+                                                <code>string</code><p><p>The series' color. Any valid HTML/CSS color definition</p>
+<pre><code>         (e. g. "white", "#FFF", "#123456").</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$targetAxisIndex</h4>
+                                                <code>int</code><p><p>The axis to which the series will be assigned to</p>
+<pre><code>         ("0" default axis, "1" opposite axis).</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pointSize</h4>
+                                                <code>int</code><p><p>Individual size of the series' data points.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$lineWidth</h4>
+                                                <code>int</code><p><p>Individual size of the series' lines.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$areaOpacity</h4>
+                                                <code>float</code><p><p>Individual opacity of the series' area. 0.0 means fully</p>
+<pre><code>         transparent, 1.0 fully opaque.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$curveType</h4>
+                                                <code>mixed</code><p><p>The series' curve type. Must be one of the <i>CURVE_...</i></p>
+<pre><code>         constants or null.</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$visibleInLegend</h4>
+                                                <code>boolean</code><p><p>If set to true, the series will be displayed in the legend.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setType"></a>
+                        <div class="element clickable method public  method_setType" data-toggle="collapse" data-target=".method_setType .collapse">
+                            <h2>Sets the series&#039; type.</h2>
+                            <pre>setType(string $type) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given type is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>The series' marker type. Must be on of the <i>TYPE_...</i></p>
+<pre><code>         constants or null. If set to null, the default type will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setColor"></a>
+                        <div class="element clickable method public  method_setColor" data-toggle="collapse" data-target=".method_setColor .collapse">
+                            <h2>Sets the series color.</h2>
+                            <pre>setColor(string $color) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Any valid HTML/CSS color definition (e. g. "white", "#FFF", "#123456").</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$color</h4>
+                                                <code>string</code><p><p>The series' color. If set to null, the default color will</p>
+<pre><code>         be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTargetAxisIndex"></a>
+                        <div class="element clickable method public  method_setTargetAxisIndex" data-toggle="collapse" data-target=".method_setTargetAxisIndex .collapse">
+                            <h2>Sets the axis to which the series will be assigned.</h2>
+                            <pre>setTargetAxisIndex(int $index) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code>int</code><p><p>The axis to which the series will be assigned to</p>
+<pre><code>         ("0" default axis, "1" opposite axis).</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setLineWidth"></a>
+                        <div class="element clickable method public  method_setLineWidth" data-toggle="collapse" data-target=".method_setLineWidth .collapse">
+                            <h2>Sets the individual data line&#039;s width.</h2>
+                            <pre>setLineWidth(int $width) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$width</h4>
+                                                <code>int</code><p><p>The data line's width in pixels. Must be greater or equal than "0".</p>
+<pre><code>         When set to "0", the lines will be invisible and only the
+         data point will be displayed.
+         If set to null, the default width (2 pixels) will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPointSize"></a>
+                        <div class="element clickable method public  method_setPointSize" data-toggle="collapse" data-target=".method_setPointSize .collapse">
+                            <h2>Sets the individual data point size.</h2>
+                            <pre>setPointSize(int $size) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$size</h4>
+                                                <code>int</code><p><p>The data point's size in pixel. Must be greater or equal than "0".</p>
+<pre><code>         When set to "0", the data points will be invisible.
+         If set to null, the data points won't be displayed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAreaOpacity"></a>
+                        <div class="element clickable method public  method_setAreaOpacity" data-toggle="collapse" data-target=".method_setAreaOpacity .collapse">
+                            <h2>Sets the individual colored area&#039;s opacity.</h2>
+                            <pre>setAreaOpacity(float $opacity) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$opacity</h4>
+                                                <code>float</code><p><p>The areas opacity. 0.0 means fully transparent, 1.0</p>
+<pre><code>             fully opaque.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setCurveType"></a>
+                        <div class="element clickable method public  method_setCurveType" data-toggle="collapse" data-target=".method_setCurveType .collapse">
+                            <h2>Sets the series&#039; curve type.</h2>
+                            <pre>setCurveType(string $type) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Thrown, if the given type is invalid. That is, if a value</p>
+<pre><code>         other than one of the constants is used.</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>string</code><p><p>The series' curve type. Must be one of the <i>CURVE_...</i></p>
+<pre><code>         constants or null. If set to null, the default type will be used.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setVisibleInLegend"></a>
+                        <div class="element clickable method public  method_setVisibleInLegend" data-toggle="collapse" data-target=".method_setVisibleInLegend .collapse">
+                            <h2>Sets if the series will be visible in the legend.</h2>
+                            <pre>setVisibleInLegend(boolean $visible) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$visible</h4>
+                                                <code>boolean</code><p><p>If set to true, the series will be displayed in the legend.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getOption"></a>
+                        <div class="element clickable method public  method_getOption inherited" data-toggle="collapse" data-target=".method_getOption .collapse">
+                            <h2>Gets an option&#039;s value</h2>
+                            <pre>getOption(string $name) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The name of the option to get the value for.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>The option's value. Is null, if option is not set.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOption"></a>
+                        <div class="element clickable method public  method_setOption inherited" data-toggle="collapse" data-target=".method_setOption .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOption(string $name, string $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This allows to set additional options that are currently not supported by the set-methods.
+However, you should always use on of the other set-methods if possible.</p>
+<p>Through this method, additional option-code can be added to the generated
+JavaScript-code. This is usefull, when options should be set that are
+currently not directly supported by this API (through set...() methods).</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionBoolean"></a>
+                        <div class="element clickable method public  method_setOptionBoolean inherited" data-toggle="collapse" data-target=".method_setOptionBoolean .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionBoolean(string $name, boolean $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only boolean values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>boolean</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionNumeric"></a>
+                        <div class="element clickable method public  method_setOptionNumeric inherited" data-toggle="collapse" data-target=".method_setOptionNumeric .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionNumeric(string $name, \googlecharttools\view\options\number $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only numeric values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>\googlecharttools\view\options\number</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setOptionArray"></a>
+                        <div class="element clickable method public  method_setOptionArray inherited" data-toggle="collapse" data-target=".method_setOptionArray .collapse">
+                            <h2>Sets an option to a given value.</h2>
+                            <pre>setOptionArray(string $name, string[] $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This has the same semantic as {@link setOption()}.
+However, only array values are accepted.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The option's name.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string[]</code><p><p>The option's value. If set to null, the option</p>
+<pre><code>         will be removed.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encodeOptions"></a>
+                        <div class="element clickable method protected  method_encodeOptions inherited" data-toggle="collapse" data-target=".method_encodeOptions .collapse">
+                            <h2>Encodes the set options into a JSON-object</h2>
+                            <pre>encodeOptions() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>Encoded options.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encodeArrayToJson"></a>
+                        <div class="element clickable method private  method_encodeArrayToJson inherited" data-toggle="collapse" data-target=".method_encodeArrayToJson .collapse">
+                            <h2>Encodes an array into a JSON-object or array.</h2>
+                            <pre>encodeArrayToJson(mixed[] $array, boolean $asObject = true) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$array</h4>
+                                                <code>mixed[]</code><p><p>The array, the data is stored in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$asObject</h4>
+                                                <code>boolean</code><p><p>If set to true, the data will be encoded as an JSON-object.</p>
+<pre><code>         Otherwise its encoded as a JSON-array.</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>The encoded data.</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_TYPE_AREA"> </a>
+                            <div class="element clickable constant  constant_TYPE_AREA" data-toggle="collapse" data-target=".constant_TYPE_AREA .collapse">
+                                <h2>TYPE_AREA</h2>
+                                <pre>TYPE_AREA</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TYPE_BARS"> </a>
+                            <div class="element clickable constant  constant_TYPE_BARS" data-toggle="collapse" data-target=".constant_TYPE_BARS .collapse">
+                                <h2>TYPE_BARS</h2>
+                                <pre>TYPE_BARS</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_TYPE_LINE"> </a>
+                            <div class="element clickable constant  constant_TYPE_LINE" data-toggle="collapse" data-target=".constant_TYPE_LINE .collapse">
+                                <h2>TYPE_LINE</h2>
+                                <pre>TYPE_LINE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CURVE_NONE"> </a>
+                            <div class="element clickable constant  constant_CURVE_NONE" data-toggle="collapse" data-target=".constant_CURVE_NONE .collapse">
+                                <h2>CURVE_NONE</h2>
+                                <pre>CURVE_NONE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_CURVE_FUNCTION"> </a>
+                            <div class="element clickable constant  constant_CURVE_FUNCTION" data-toggle="collapse" data-target=".constant_CURVE_FUNCTION .collapse">
+                                <h2>CURVE_FUNCTION</h2>
+                                <pre>CURVE_FUNCTION</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_options"> </a>
+                            <div class="element clickable property  private property_options inherited" data-toggle="collapse" data-target=".property_options .collapse">
+                                <h2>options</h2>
+                                <pre>options : mixed[]</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>mixed[]</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\googlecharttools\view\options\Series"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/googlecharttools.view.options.html">options</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/googlecharttools.view.options.Series.html">Series</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 27 Mar 2016 09:54:27 -0700.<br/>
+    </footer>
+    </body>
+</html>
