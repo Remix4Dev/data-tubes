@@ -20,7 +20,7 @@
  * @author Patrick Strobel
  * @license http://www.apache.org/licenses/LICENSE-2.0  Apache License, Version 2.0
  * @link http://code.google.com/p/googlecharttools-php
- * @version $Revision$
+ * @version $Id: ComboChart.class.php 27 2012-06-16 11:39:45Z patrick.strobel.swt@gmail.com $
  * @package view
  */
 
