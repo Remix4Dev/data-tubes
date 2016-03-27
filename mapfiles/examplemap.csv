@@ -1,0 +1,14 @@
+source,zohocrmdest,zDataType,zDefault
+id,Sample ID,string,NULL
+UID,Sample UID,string,NULL
+library_name,Account Name,string,NULL
+n/a,Industry,picklist,NULL
+address_1,Shipping Street,string,NULL
+address_2,Shipping Street,string2,NULL
+city,Shipping City,string,NULL
+state,Shipping State,string,NULL
+zip_code,Shipping Code,string,NULL
+grouping,othergrouptest,number,NULL
+tags,Tags,multipicklist,$addTags
+datefield,otherdatefield,datetime,NULL
+booleanitem,otherbooleanitem,picklistbool,NULL
